@@ -17,6 +17,6 @@ class ApplicationConfig {
 	@Bean
 	static ConfigureRedisAction configureRedisAction() {
 
-		return ConfigureRedisAction.NO_OP;
+		ConfigureRedisAction.NO_OP;
 	}
 }
