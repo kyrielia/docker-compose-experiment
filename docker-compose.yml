@@ -1,0 +1,12 @@
+app:
+  build: .
+  ports:
+    - "8080"
+  links:
+    - redis
+  environment:
+    - "JAVA_OPTS=-Dspring.redis.host=redis"
+redis:
+  image: redis:alpine
+  ports:
+    - "6379"
